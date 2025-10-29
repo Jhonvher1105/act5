@@ -1,60 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".UpdateCourseActivity">
+    tools:context=".UpdateCourseActivity"
+    android:paddingTop="40dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:background="@color/white"
+    android:textColor="@color/black">
 
     <!--Edit text to enter course name-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_course_name"
+        android:textSize="20sp"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/black"/>
+
     <EditText
         android:id="@+id/idEdtCourseName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Enter course Name" />
+        android:hint="Enter course Name"
+        android:background="@drawable/inputborder"/>
 
     <!--edit text to enter course duration-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_course_dur"
+        android:textSize="20sp"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/black"/>
+
     <EditText
         android:id="@+id/idEdtCourseDuration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Enter Course Duration" />
+        android:hint="Enter Course Duration"
+        android:background="@drawable/inputborder" />
 
     <!--edit text to display course tracks-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_course_tra"
+        android:textSize="20sp"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/black"/>
+
     <EditText
         android:id="@+id/idEdtCourseTracks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Enter Course Tracks" />
+        android:hint="Enter Course Tracks"
+        android:background="@drawable/inputborder" />
 
     <!--edit text for course description-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_course_desc"
+        android:textSize="20sp"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/black"/>
     <EditText
         android:id="@+id/idEdtCourseDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Enter Course Description" />
+        android:hint="Enter Course Description"
+        android:background="@drawable/inputborder" />
 
-    <!--button for updating our course-->
-    <Button
-        android:id="@+id/idBtnUpdateCourse"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Update Course"
-        android:textAllCaps="false" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <!--button for deleting our course-->
-    <Button
-        android:id="@+id/idBtnDelete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Delete Course"
-        android:textAllCaps="false" />
+        <!--new button for opening our course list activity-->
+
+        <Button
+            android:id="@+id/idBtnUpdateCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Updat Course"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            android:background="@drawable/main_btn"
+
+            android:backgroundTint="@null"
+            app:backgroundTint="@null"
+            />
+
+        <Button
+            android:id="@+id/idBtnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/red_sec_btn"
+            android:backgroundTint="@null"
+            android:text="Delete Record"
+            android:textAllCaps="false"
+            android:textColor="@color/red"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBtnUpdateCourse"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>

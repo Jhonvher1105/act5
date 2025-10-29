@@ -4,12 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewCourses">
+    tools:context=".ViewCourses"
+    android:background="@drawable/sec_btn"
+    android:backgroundTint="@null"
+    >
 
     <!--recycler view for displaying our courses-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVCourses"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        android:backgroundTint="@null"/>
 
 </RelativeLayout>

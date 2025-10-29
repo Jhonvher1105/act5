@@ -20,7 +20,8 @@
         android:layout_height="wrap_content"
         android:text="@string/label_course_name"
         android:textSize="20sp"
-        android:layout_marginStart="13dp"/>
+        android:layout_marginStart="13dp"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/idEdtCourseName"
@@ -37,7 +38,8 @@
         android:layout_height="wrap_content"
         android:text="@string/label_course_dur"
         android:textSize="20sp"
-        android:layout_marginStart="13dp"/>
+        android:layout_marginStart="13dp"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/idEdtCourseDuration"
@@ -53,7 +55,8 @@
         android:layout_height="wrap_content"
         android:text="@string/label_course_tra"
         android:textSize="20sp"
-        android:layout_marginStart="13dp"/>
+        android:layout_marginStart="13dp"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/idEdtCourseTracks"
@@ -69,7 +72,8 @@
         android:layout_height="wrap_content"
         android:text="@string/label_course_desc"
         android:textSize="20sp"
-        android:layout_marginStart="13dp"/>
+        android:layout_marginStart="13dp"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/idEdtCourseDescription"

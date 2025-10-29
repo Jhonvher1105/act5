@@ -104,9 +104,9 @@ public class DBHandler extends SQLiteOpenHelper {
             do {
                 // on below line we are adding the data from cursor to our array list.
                 courseModalArrayList.add(new CourseModal(cursorCourses.getString(1),
-                        cursorCourses.getString(4),
                         cursorCourses.getString(2),
-                        cursorCourses.getString(3)));
+                        cursorCourses.getString(3),
+                        cursorCourses.getString(4)));
             } while (cursorCourses.moveToNext());
             // moving our cursor to next.
         }
