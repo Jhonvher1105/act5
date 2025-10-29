@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="label_course_name">Course Name</string>
+    <string name="label_course_dur">Course Duration</string>
+    <string name="label_course_tra">Course Track</string>
+    <string name="label_course_desc">Course Description</string>
 </resources>

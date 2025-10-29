@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Border color and thickness -->
+    <stroke
+        android:width="2dp"
+        android:color="#0ee6ff" /> <!-- Orange border -->
+
+    <!-- Background color -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Optional: Rounded corners -->
+    <corners android:radius="8dp" />
+
+    <!-- Optional: Padding inside -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+</shape>
